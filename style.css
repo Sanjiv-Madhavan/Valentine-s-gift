@@ -46,6 +46,19 @@ body {
 
 }
 
+.papers {
+    padding: 100px 100px;
+    /* border: 2px solid black; */
+    position: absolute; /* ek ke upar ek kar deta hai */
+    cursor:grab;
+    /* background-image: url('./assets/paper.jpg'); */
+    background-size: 100px;
+    padding: 20px 70px;
+    transform: rotateZ(-5deg);
+    /* box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5); */
+
+}
+
 .paper.paper1{
     display: flex;
     align-items: center;
