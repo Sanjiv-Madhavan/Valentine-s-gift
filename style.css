@@ -17,6 +17,21 @@ body {
     justify-content: center;  /* row ke center mei karta hai */
 }
 
+.scroll-container {
+    width: 100vw; /* Take full width of the screen */
+    height: 90vh; /* Adjust height for visibility */
+    overflow-y: auto; /* Enable vertical scrolling */
+    overflow-x: hidden; /* Prevent sideways scrolling */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px; /* Adds space between papers */
+    position: relative;
+}
+
+
 .paper {
     padding: 100px 100px;
     border: 2px solid black;
@@ -24,7 +39,7 @@ body {
     cursor:grab;
     background-image: url('./assets/paper.jpg');
     background-size: 100px;
-    padding: 20px 100px;
+    padding: 20px 70px;
     transform: rotateZ(-5deg);
     box-shadow: 1px 15px 20px 0px rgba(0, 0, 0, 0.5);
     user-select: none;
@@ -52,9 +67,15 @@ body {
 
 .paper.paper2{
     z-index: 9;
-    width: 100px;
+    width: 300px;
     user-select: none;
     color: black;
+}
+
+.paper.paper2 img{
+    width: 180px;
+    height: 180px;
+    user-select: none;
 }
 
 .paper.paper3{
@@ -65,7 +86,7 @@ body {
 
 .paper.paper4{
     z-index: 7;
-    width: 150px;
+    width: 300px;
     user-select: none;
 }
 
